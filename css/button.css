@@ -1,0 +1,26 @@
+.button {
+    border: none;
+    cursor: pointer;
+}
+.submit {
+    width: 100%;
+    padding: .8rem 0;
+    border-radius: 1rem;
+
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    background-color: var(--pr-orange);
+}
+.score:hover {
+    background-color: var(--pr-orange);
+    color: white;
+}
+.score:focus {
+    background-color: var(--light-grey);
+    color: white;
+}
+.submit:hover {
+    background-color: white;
+    color: var(--pr-orange);
+}
