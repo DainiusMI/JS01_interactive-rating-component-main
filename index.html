@@ -6,7 +6,7 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./css/home.css">
-  <script src="./index.js"></script>
+
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -24,54 +24,59 @@
 
 
   <div class="main">
-    <div class="rating-form">
+    <div class="rating-form" id="rating-form">
 
       <img class="logo-img" src="./images/icon-star.svg" alt="logo">
       
-      <h1 class="rating-form-title"> How did we do?</h1>
-      <p class="rating-form-paragraph" >  Please let us know how we did with your support request. All feedback is appreciated 
+      <h1 class="form-title"> How did we do?</h1>
+      <p class="form-paragraph" >  Please let us know how we did with your support request. All feedback is appreciated 
         to help us improve our offering!</p>
 
         <div class="score-row">
-          <button class="button score"
-          
-          >1</button>
-          <button class="button score">2</button>
-          <button class="button score">3</button>
-          <button class="button score">4</button>
-          <button class="button score">5</button>
+          <button class="button score" onclick="voting()">1</button>
+          <button class="button score" onclick="voting()">2</button>
+          <button class="button score" onclick="voting()">3</button>
+          <button class="button score" onclick="voting()">4</button>
+          <button class="button score" onclick="voting()">5</button>
         </div>
 
-        <button class="button submit" type="submit">Submit</button>
+        <button class="button submit" onclick="switchForms()" type="submit">Submit</button>
     </div>
+      <!-- Rating state end -->
+
+
+    <!-- Thank you state -->
+    <div class="thanking-form" id="thanking-form">
+      <img class="ty-img" src="./images/illustration-thank-you.svg" alt="TY">
+      <div class="score-row continnues-padding">
+        <p>You selected </p> <p id="score" class="voting-score"> 0 </p> <p> out of 5</p>
+      </div>
+      <h1 class="form-title">  Thank you!</h1>
+      <p class="form-paragraph">  We appreciate you taking the time to give a rating. If you ever need more support, 
+        don’t hesitate to get in touch!</p>
+    </div>
+
+
+
   </div>
+
 
 
  
 
 
 
-  1 2 3 4 5
 
 
-
-  <!-- Rating state end -->
-
-  <!-- Thank you state 
-
-  You selected <!-- Add rating here  out of 5
-
-  Thank you!
-
-  We appreciate you taking the time to give a rating. If you ever need more support, 
-  don’t hesitate to get in touch!
-
- Thank you state end -->
+ <!-- Thank you state end -->
 
   
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div>
+
+
+  <script src="./index.js"></script>
 </body>
 </html>

@@ -21,7 +21,7 @@ body {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 90vh;
+    height: 97vh;
     font-size: 15px;
     background-color: var(--very-dark-blue);
 
@@ -29,7 +29,7 @@ body {
 
 .main {
     padding: 2rem;
-    width: 40%;
+    width: 22rem;
     border-radius: 1rem;
     background-color: var(--dark-blue);
 }
@@ -49,13 +49,15 @@ body {
     width: 1rem;
 
 }
-.rating-form-title {
+.form-title {
     font-weight: 700;
     color: white;
 }
-.rating-form-paragraph {
+.form-paragraph {
     width: 35ch;
     font-weight: 400;
+}
+p {
     color: var(--light-grey);
 }
 .score-row {
@@ -63,10 +65,10 @@ body {
     justify-content: space-between;
 }
 .score {
-    font-size: 22px;
+    font-size: 18px;
     color: var(--light-grey);
 
-    width: 2em;
+    width: 3rem;
     aspect-ratio: 1;
     line-height: 2em;
     text-align: center;
@@ -74,10 +76,41 @@ body {
 
     background-color:var(--medium-grey);
 }
+
 /*      2nd form       */
 
+.thanking-form {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+.ty-img {
+    width: 12rem;
+}
+.continnues-padding {
+   display: flex;
+   justify-content: center;
+   padding: .3rem 1rem; 
+   background-color: var(--medium-grey);
+   border-radius: 2rem;
+}
+.continnues-padding p {
+    color: var(--pr-orange);
+
+ 
+}
+.thanking-form .form-paragraph{
+    text-align: center;
+}
 
 
+.hide-form {
+    display: none;
+}
+.display-form {
+    display: flex;
+}
 
 
 .attribution { font-size: 11px; text-align: center; }
