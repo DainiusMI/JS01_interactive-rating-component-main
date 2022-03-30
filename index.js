@@ -1,10 +1,8 @@
 
-
 function voting() {
 const score = document.activeElement.textContent;
 document.getElementById("score").innerText = score;
 }
-
 
 function submit() {
     var score = document.getElementById("score").innerText;
