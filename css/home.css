@@ -28,8 +28,7 @@ body {
 }
 
 .main {
-    padding: 2rem;
-    width: 22rem;
+
     border-radius: 1rem;
     background-color: var(--dark-blue);
 }
@@ -53,10 +52,7 @@ body {
     font-weight: 700;
     color: white;
 }
-.form-paragraph {
-    width: 35ch;
-    font-weight: 400;
-}
+
 p {
     color: var(--light-grey);
 }
@@ -116,4 +112,31 @@ p {
 .attribution { font-size: 11px; text-align: center; }
 .attribution a { color: hsl(228, 45%, 44%); }
 
+/*  responsive design   */
 
+@media (max-width: 375px) {
+  .main {
+      width: 80%;
+      padding: 1.5rem;
+  }
+
+  .rating-form .form-paragraph {
+    width: 32ch;
+    font-weight: 400;
+    font-size: 14px;
+    }
+
+}
+
+@media (min-width: 376px) {
+    .main {
+        width: 22rem;
+        padding: 2rem;
+    }
+
+   .form-paragraph {
+        width: 35ch;
+        font-weight: 400;
+       
+    }
+}
